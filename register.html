@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Seller Registration- Click 'O' Catchy</title>
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text.css'/>
+<link rel="stylesheet" href="assets/css/css.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<h1 id="bigone"></h1>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.20.0/firebase-database.js"></script>
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyBj3-dx6LBC13sc_e3L3U-0-8aWN0JYBrs",
+    authDomain: "click--o--catchy.firebaseapp.com",
+    databaseURL: "https://click--o--catchy.firebaseio.com",
+    projectId: "click--o--catchy",
+    storageBucket: "click--o--catchy.appspot.com",
+    messagingSenderId: "650712691929",
+    appId: "1:650712691929:web:e20ea4b54af655f010fac8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  function ready(){
+   var name=document.getElementById('username').value;
+  var pass=document.getElementById('password').value;
+  var sname=document.getElementById('shopname').value;
+  var sc= document.getElementById('category').value;
+  var area= document.getElementById('area').value;
+  var state=document.getElementById('state').value;
+  var dis=document.getElementById('dis').value;
+  }
+ document.getElementById('register').onclick=function(){
+       ready();
+       firebase.database().ref("owner/"+name).set({
+       area:area,
+       district:dis,
+       password:pass ,
+       username: name,
+       shopcategory:sc,
+       state:state,
+       shop name:sname
+   });
+}
+</script>
+</head>
+<body>
+<link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="nav-header">
+      <div style="font-weight: bold;color:#9900ff;font-size:30px;margin-right: 20px;margin-left:20px">
+      Click 'O' Catchy</div> 
+     <a href="home.html"><span style="color:#fe7f9f;font-size:20px;margin-right: 20px;margin-left:20px" >  Home  </span>  </a>
+     <a href="login.html"><span style="color:#fe7f9f;font-size:20px;margin-right: 16px;margin-left:16px">Shop owner   </span></a>
+     <a href="cu.html"><span style="color:#fe7f9f;font-size:20px;margin-right: 16px;margin-left:16px">Customer   </span></a>
+     <a href="help.html"><span style="color:#fe7f9f;font-size:20px;margin-right: 16px;margin-left:16px" >Help  </span> </a>
+     <a href="about.html"><span style="color:#fe7f9f;font-size:20px;margin-right: 16px;margin-left:16px">About us    </span></a>
+    </div>
+  </div>
+</nav> 
+      <div class="container-fluid page-body-wrapper full-page-wrapper">
+        <div class="content-wrapper d-flex align-items-center auth">
+          <div class="row flex-grow">
+            <div class="col-lg-4 mx-auto">
+              <div class="auth-form-light text-left p-5">
+                <h3>Seller's Registration Form</h3>
+                <form class="pt-3">
+                  <div class="form-group">
+                    <h6>Username  </h6> <input type="text" class="form-control form-control-lg" id="username" placeholder="Enter Your name" required>
+                  </div>
+                  <div class="form-group">
+                    <h6>Password  </h6><input type="password" class="form-control form-control-lg" id="password" placeholder="Enter a password" required>
+                  </div>
+                   <div class="form-group">
+                    <h6>Shop name  </h6><input type="text" class="form-control form-control-lg" id="shopname" placeholder="Enter your Shop's name" required>
+                  </div>
+                  <div class="form-group">
+                    <h6>Shop Category  </h6><input  type="text" class="form-control form-control-lg" placeholder="Type if category is not available"  required list="category"/>
+                    <datalist id="category">
+                    <option>Select</option></datalist>
+                  </div>
+                   <div class="form-group">
+                    <h6>Area  </h6><input type="text" list="area" class="form-control form-control-lg"  required placeholder="Type if area is not available"/>
+                    <datalist id="area">
+                    <option>Select</option></datalist>
+                  </div>
+                  <div class="form-group">
+                    <h6>District  </h6><input type="text" list="district" class="form-control form-control-lg"  required placeholder="Type if district is not available"/>
+                    <datalist id="dis">
+                    <option>Select</option></datalist>
+                  </div>
+                   <div class="form-group">
+                    <h6>State  </h6><input type="text" list="state" class="form-control form-control-lg"  required placeholder="Type if state is not available"/>
+                    <datalist id="state">
+                    <option>Select</option></datalist>
+                  </div>
+                  <div class="mt-3">
+                    <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" id="register" href="#popup2">Register</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      <div id="popup2" class="overlay">
+	<div class="popup">
+		<h4>You Have Successfully Registered!!</h4>
+                  <div class="mt-3">
+                    <a class="btn btn-md btn-secondary display-4" href="login.html">Login Now</a>
+                  </div>
+	</div>
+      </div>
+</body>
+</html>

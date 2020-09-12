@@ -1,0 +1,67 @@
+<html lang="en">
+<head>
+  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home-Click 'O' Catchy</title>
+    <link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+  <style> 
+* {box-sizing: border-box;}
+body  {
+   background-color:#ECF0F1 ;
+   font-color:cyan;
+   }
+@media screen and (max-width: 500px) {
+  .navbar-header a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+ .nav navbar-nav navbar-right {
+    float: none;
+  }
+ </style>
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div style="font-weight: bold;color:#9900ff;font-size:30px;margin-right: 20px;margin-left:20px">
+      Click 'O' Catchy</div> 
+     <a href="home.html"><span style="color:#fe7f9f;font-size:20px;margin-right: 20px;margin-left:20px" >  Home  </span>  </a>
+     <a href="login.html"><span style="color:#fe7f9f;font-size:20px;margin-right: 16px;margin-left:16px">Shop owner   </span></a>
+     <a href="cu.html"><span style="color:#fe7f9f;font-size:20px;margin-right: 16px;margin-left:16px">Customer   </span></a>
+     <a href="help.html"><span style="color:#fe7f9f;font-size:20px;margin-right: 16px;margin-left:16px" >Help  </span> </a>
+     <a href="about.html"><span style="color:#fe7f9f;font-size:20px;margin-right: 16px;margin-left:16px">About us    </span></a>
+    </div>
+</nav> 
+<link rel="stylesheet" href="assets/css/css.css">
+<div class="galleryContainer">
+    <div class="slideShowContainer">
+        <div id="playPause" onclick="playPauseSlides()"></div>
+        <div onclick="plusSlides(-1)" class="nextPrevBtn leftArrow"><span class="arrow arrowLeft"></span></div> 
+        <div onclick="plusSlides(1)" class="nextPrevBtn rightArrow"><span class="arrow arrowRight"></span></div>
+        <div class="captionTextHolder"><p class="captionText slideTextFromTop"></p></div>
+        <div class="imageHolder">
+            <img src="assets/images/hom.jpg">
+            <p class="captionText">Enroll your store according to your availability and attain your best products through us</p>
+        </div>
+        <div class="imageHolder">
+            <img src="assets/images/k.jpg">
+            <p class="captionText">Shop  your nearest store through online and book your required stock and redeem  your products</p>
+        </div>
+        <div class="imageHolder">
+            <img src="assets/images/b2.jpg">
+            <p class="captionText">Get your products and stocks at your store with good  service and safe delivery</p>
+        </div>
+    </div>
+    <div id="dotsContainer"></div>
+</div>
+<div class="col-lg-4 mx-auto">
+<div class="mt-3"><center><a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" href="login.html">Shop owner</a></center></div>
+<div class="mt-3"><center><a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" href="cu.html">Customer</a></center></div></div>
+<script src="assets/js/myScript.js"></script>
+</body>
+</html>

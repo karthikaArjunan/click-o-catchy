@@ -1,0 +1,121 @@
+<html>
+<head>
+<html lang="en">
+<head>  
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Customer Registration-Click 'O' Catchy</title>
+<link rel="stylesheet" href="assets/vendors/mdi/css/materialdesignicons.min.css">
+<link rel="stylesheet" href="assets/vendors/css/vendor.bundle.base.css">
+<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
+<link href='//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text.css'/>
+<link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/css/css.css">
+<script src="assets/js/jquery.js"></script>
+<script src="assets/js/jquery.datetimepicker.full.js"></script>
+<!--//webfonts-->
+</head>
+<body>
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div style="font-weight: bold;color:#9900ff;font-size:30px;margin-right: 20px;margin-left:20px">
+      Click 'O' Catchy</div> 
+     <a href="home.html"><span style="color:#fe7f9f;font-size:20px;margin-right: 20px;margin-left:20px" >  Home  </span>  </a>
+     <a href="login.html"><span style="color:#fe7f9f;font-size:20px;margin-right: 16px;margin-left:16px">Shop owner   </span></a>
+     <a href="cu.html"><span style="color:#fe7f9f;font-size:20px;margin-right: 16px;margin-left:16px">Customer   </span></a>
+     <a href="help.html"><span style="color:#fe7f9f;font-size:20px;margin-right: 16px;margin-left:16px" >Help  </span> </a>
+     <a href="about.html"><span style="color:#fe7f9f;font-size:20px;margin-right: 16px;margin-left:16px">About us    </span></a>
+    </div>
+</nav> 
+<div class="container-scroller">
+      <div class="container-fluid page-body-wrapper full-page-wrapper">
+        <div class="content-wrapper d-flex align-items-center auth">
+          <div class="row flex-grow">
+            <div class="col-lg-4 mx-auto">
+              <div class="auth-form-light text-left p-5">
+                <h3>Book Your Shopping</h3>
+                <form class="pt-3">
+                  <div class="form-group">
+                    <h6>Phone number  </h6> <input type="phone" class="form-control form-control-lg" id="exampleInputEmail1" placeholder="Enter Your Phone number">
+                  </div>
+                   <div class="form-group">
+                    <h6>Shop Category  </h6><select class="form-control" id="wpsl_store" name="wpsl_store">
+                    <datalist id="area">
+                    <option>Select</option>
+                    <option>Pharmacy</option>
+                    <option>Grocery Shop</option>
+                    <option>Departmental Store</option>
+                    <option>Textile Shop</option></datalist></select>
+                  </div>
+                   <div class="form-group">
+                    <h6>Area  </h6><select class="form-control" id="wpsl_store" name="wpsl_store"> <option>Select</option></select>
+                  </div>
+                  <div class="form-group">
+                    <h6>District  </h6><select class="form-control" id="wpsl_store" name="wpsl_store"> <option>Select</option></select>
+                  </div>
+                 <div class="form-group">
+                    <h6>State  </h6><select class="form-control" id="wpsl_store" name="wpsl_store"> <option>Select</option></select>
+                  </div>
+                 <div class="form-group">
+                    <h6>Products You Want  </h6><select class="form-control" id="wpsl_store" name="wpsl_store"> <option>Select</option></select>
+                  </div>
+                  <div class="form-group">
+                    <h6>Time Slot  </h6><input id="datetime" class="form-control form-control-lg"><script>$("#datetime").datetimepicker({step:30,minDate:0,minTime:0});</script>
+                  </div>
+                  <div class="mt-3">
+                    <a class="btn btn-block btn-gradient-primary btn-lg font-weight-medium auth-form-btn" href="#popup2">Show the Shops Available</a>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- content-wrapper ends -->
+      </div>
+      <div id="popup2" class="overlay">
+	<div class="popup">
+		<h3>Shops near you</h3>
+                                         <h6>Odessey Adyar</h6>
+                                         <p>Gandhi Road, Chennai</p>
+                                            <a href="tel:04442037799"><img src="assets/images/call.png" height="20px" width="20px" /></a>
+<span class="heading">User Rating</span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star checked"></span>
+<span class="fa fa-star"></span>
+<p>4 average based on 24 reviews.</p>
+                  <div class="mt-3">
+                    <a class="btn btn-md btn-secondary display-4" href="#popup3">Book Now</a>
+                  </div>
+	</div>
+      </div>
+       <div id="popup3" class="overlay">
+	<div class="popup">
+		<h3>Your Booking is Done!!</h3>
+                                         <h6>Your number is : 04092230</h6>
+                  <div class="mt-3">
+                    <a class="btn btn-md btn-secondary display-4" href="#">Send me message</a>
+                  </div>
+                   <div class="mt-3">
+                    <a class="btn btn-md btn-secondary display-4" href="#popup4">Rate the shop</a>
+                  </div>
+	</div>
+      </div>
+      <div id="popup4" class="overlay">
+	<div class="popup">
+		<h3>How will you rate this shop?</h3>
+                     <div class="mt-3">
+                    <span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star checked"></span>
+	<span class="fa fa-star"></span>
+	<span class="fa fa-star"></span>
+                    <a class="btn btn-md btn-secondary display-4" href="#">Submit</a>
+                  </div>                     
+	</div>
+      </div>
+</body>
+</html>
